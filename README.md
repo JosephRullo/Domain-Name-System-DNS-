@@ -3,19 +3,22 @@
 </p>
 
 <h1> <p align="center"> Domain Name System</h1>
-<p align="center"> This tutorial outlines the implementation and connection to Virtual Private Networks and it's affect on IP addresses and location.<br />
+<p align="center"> This tutorial outlines a basic understanding of what DNS is and how it functions as well as some command tools for identifying and resolving common issues.<br />
 <br />
 
 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
+- Virtual Machines
 - Remote Desktop (Android Version)
 - Active Directory
+- Command Prompt
 
 <h2>Operating Systems Used </h2>
 
 - Windows 10 (21H2)
+- Windows Server 2022
 <p>
 <p>
 <p>
