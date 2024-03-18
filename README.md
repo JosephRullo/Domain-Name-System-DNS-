@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.imgur.com/Gepl8Q5.jpg" height=100% width=100% alt="Microsoft Active Directory Logo"/>
+<img src="https://i.imgur.com/Mfc8tBk.jpeg" height=100% width=100% alt="Microsoft Active Directory Logo"/>
 </p>
 
 <h1> <p align="center"> Domain Name Systems</h1>
