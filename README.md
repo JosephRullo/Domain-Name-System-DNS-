@@ -59,12 +59,7 @@ Let's begin with logging in to our Domain Controller and Client VM's as the Admi
 <br>
 <h2>Step 2.</h2>
 
-**Log in and Check your IP Address**
+**Create A record on the DNS server**
 <p>
-Log into the VM via Remote Desktop. Once Window's is done booting, open the web browser and go to this website www.whatismyipaddress.com. This will show you the actual IP Address and region of the VM. Next try going to www.google.com and notice the native language of the region is displayed, in this case Japanese.
-<p>
-<p>
-<img src="https://i.imgur.com/QvpRM8Q.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/X19xJQN.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<p>
+
 <br>
