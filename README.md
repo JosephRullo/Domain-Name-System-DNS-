@@ -21,13 +21,16 @@
 - Windows Server 2022
 <p>
 <p>
+  <h2>High-Level Configuration Steps</h2>
+
+- Inspect DNS A records on the server (Hostname to IP Address Mappings)
+- Create our own A records on the server and observe them on the client
+- Delete records from the server and inspect/clear the client dns cache
+- Create a "CNAME" record (mapping one hostname to another hostname)
 <p>
 <br> 
 <h2>Let's briefly describe what DNS (Domain Name System) is and it's primary use</h2> The Domain Name System (DNS) maps human-readable domain names (in URLs or in email address) to IP addresses. For example, DNS translates and maps the domain www.google.com to the IP address 142.251.40.238. This takes place behind the scenes after you type a URL into a web browser's address bar. Without DNS, navigating the internet wouldn't be easy since we'd have to enter the IP address of each website we want to visit. 
 <p>  
-<p>  1. Concealing your IP address, protecting your identity and location 
-<p>  2. Encrypting your traffic between you and your VPN provider so that no one on your local network can decipher or modify it.
-<p> Businesses also use remote access VPNs to establish a secure connection between their network and the devices used by remote workers. Once connected, employees are able to access the resources on the network just as if their devices were physically plugged in at the office.
 <br>  
 <br>
 For the demonstration below I will create a Virtual Machine in Microsoft Azure and assign it a region in another country. Then I will demonstrate how a VPN can be used to change it's IP Address and location to view another regions local content as if it were physically located there. We'll switch locations once more and observe the changes. The diagram below will illustrate this.
