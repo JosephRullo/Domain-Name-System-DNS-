@@ -34,7 +34,9 @@
 <p>  
 <br>  
 <br>
-For the demonstration below I will use Active Directory that was installed in a Microsoft Azure Virtual Machine running Windows 2022 Sever and it's Client running Windows 10. After joining the Client to the Domain Controller I will login as the Administrator on both VM's to continue with the lab. For a full walkthrough on how to install and configure Active Directory and Azure VM's please view my previous tutorials by clicking on these links:
+<h2>Important Note</h2>
+  
+For the demonstration below I will use Active Directory that was installed in a Microsoft Azure Virtual Machine running Windows 2022 Sever and it's Client running Windows 10 on another VM. After joining the Client to the Domain Controller I will login as the Administrator on both VM's to continue with the lab. For a full walkthrough on how to install and configure Active Directory and Azure VM's please view my previous tutorials by clicking on these links:
 <p> https://github.com/JosephRullo/Configuring-Active-Directory-within-Azure-VMs/blob/main/README.md</p>
 <p> https://github.com/JosephRullo/Azure-Virtual-Machines-and-Networking/blob/main/README.md</p>
 <p>
@@ -45,7 +47,8 @@ For the demonstration below I will use Active Directory that was installed in a 
 
 **Log in to Domain Controller and Client as the Adminstrator**
 <p>
-Let's begin with logging in to our Domain Controller and Client VM's as the Administrator using Microsoft Remote Desktop.
+  
+Let's begin with logging in to our Domain Controller and Client VM's as the Administrator using Microsoft Remote Desktop. ** **Note** ** The Client is using the Domain as it's **DNS server**. This means that it is relying on the Domain for all of it's Hostname to IP Address translations. Now on the Client VM, lets open the Command Prompt and type "ping mainframe".
 <p>
 <p> 
 <p>
