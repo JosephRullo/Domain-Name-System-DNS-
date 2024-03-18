@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/Mfc8tBk.jpeg" height=100% width=100% alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1> <p align="center"> Domain Name Systems</h1>
+<h1> <p align="center"> Domain Name System</h1>
 <p align="center"> This tutorial outlines the implementation and connection to Virtual Private Networks and it's affect on IP addresses and location.<br />
 <br />
 
@@ -10,8 +10,8 @@
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Proton VPN
+- Remote Desktop (Android Version)
+- Active Directory
 
 <h2>Operating Systems Used </h2>
 
