@@ -45,15 +45,16 @@ For the demonstration below I will use Active Directory that was installed in a 
 <br>
 <h2>Step 1.</h2>
 
-**Log in to Domain Controller and Client as the Adminstrator**
+**Test Pinging a Hostname and Check Local Cache**
 <p>
   
-Let's begin with logging in to our Domain Controller and Client VM's as the Administrator using Microsoft Remote Desktop. ** **Note** ** The Client is using the Domain as it's **DNS server**. This means that it is relying on the Domain for all of it's Hostname to IP Address translations. Now on the Client VM, lets open the Command Prompt and type "ping mainframe".
+Let's begin with logging in to our Domain Controller and Client VM's as the Administrator using Microsoft Remote Desktop. ** **Note** ** The Client is using the Domain as it's **DNS server**. This means that it is relying on the Domain for all of it's Hostname to IP Address translations. Now on the Client VM, lets open the Command Prompt and type "ping mainframe". You will get a message saying it cannot find the hostname "mainframe". Let's right click on the start menu and and select the run command. Type the following "c:\windows\system\32\drivers\etc\hosts" to open the local host cache (use Notepad to open the file when it prompts you). If we check the local cache for hostnames that are stored on this computer we will not find it there either. It cannot be found by the Client because the A record for the hostname "mainframe" does not exist yet on the DNS server which is located on the Domain Controller as we configured it.
 <p>
 <p> 
 <p>
-<img src="https://i.imgur.com/nVwElfM.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/8y5iyce.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/pT2SjA3.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/uW6unAJ.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/4uV5tlt.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <p>
 <br>
 <h2>Step 2.</h2>
