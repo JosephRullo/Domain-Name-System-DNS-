@@ -3,7 +3,7 @@
 </p>
 
 <h1> <p align="center"> Domain Name System</h1>
-<p align="center"> This tutorial outlines a basic understanding of what DNS is and how it functions as well as some command tools for identifying and resolving common issues.<br />
+<p align="center"> This tutorial outlines a basic understanding of what DNS is and how it functions as well as some command line prompts for identifying and resolving common issues.<br />
 <br />
 
 
@@ -11,7 +11,7 @@
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Virtual Machines
-- Remote Desktop (Android Version)
+- Remote Desktop
 - Active Directory
 - Command Prompt
 
@@ -27,28 +27,26 @@
 - Create our own A records on the server and observe them on the client
 - Delete records from the server and inspect/clear the client dns cache
 - Create a "CNAME" record (mapping one hostname to another hostname)
+- Discuss what Root Hints are and how they work
 <p>
 <br> 
 <h2>Let's briefly describe what DNS (Domain Name System) is and it's primary use</h2> The Domain Name System (DNS) maps human-readable domain names (in URLs or in email address) to IP addresses. For example, DNS translates and maps the domain www.google.com to the IP address 142.251.40.238. This takes place behind the scenes after you type a URL into a web browser's address bar. Without DNS, navigating the internet wouldn't be easy since we'd have to enter the IP address of each website we want to visit. 
 <p>  
 <br>  
 <br>
-For the demonstration below I will use Active Directory that was installed in Microsoft Azure Virtual Machines. After joining the Domain Controller to the Client I will login as the Administrator on both VM's to continue with the lab. For a full walkthrough on how to install and configure Active Directory and Azure VM's please view my previous tutorials by clicking on these links:
+For the demonstration below I will use Active Directory that was installed in a Microsoft Azure Virtual Machine running Windows 2022 Sever and it's Client running Windows 10. After joining the Client to the Domain Controller I will login as the Administrator on both VM's to continue with the lab. For a full walkthrough on how to install and configure Active Directory and Azure VM's please view my previous tutorials by clicking on these links:
 <p> https://github.com/JosephRullo/Configuring-Active-Directory-within-Azure-VMs/blob/main/README.md</p>
 <p> https://github.com/JosephRullo/Azure-Virtual-Machines-and-Networking/blob/main/README.md</p>
 <p>
 <p>
-<img src="https://i.imgur.com/iDp8ihx.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-  
 <h1>Implementation</h1>
 <br>
 <h2>Step 1.</h2>
 
-**Create a Virtual Machine in Azure**
+**Log in to Domain Controller and Client as the Adminstrator**
 <p>
-Let's begin with creating our Virtual Machine in Azure. We'll select a region for it outside of where we're currently located, in this case I've chosen Japan. Once the VM is created, take note of the Public IP Address and Location on the VM overview page.
+Let's begin with logging in to our Domain Controller and Client VM's as the Administrator using Microsoft Remote Desktop.
 <p>
-For a walktrough of creating Azure Virtual Machines visit this link https://github.com/JosephRullo/Azure-Virtual-Machines-and-Networking/blob/main/README.md
 <p> 
 <p>
 <img src="https://i.imgur.com/nVwElfM.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
