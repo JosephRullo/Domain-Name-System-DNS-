@@ -30,7 +30,7 @@
 - Discuss what Root Hints are and how they work
 <p>
 <br> 
-<h2>Let's briefly describe what DNS (Domain Name System) is and it's primary use</h2> The Domain Name System (DNS) maps human-readable domain names (in URLs or in email address) to IP addresses. For example, DNS translates and maps the domain www.google.com to the IP address 142.251.40.238. This takes place behind the scenes after you type a URL into a web browser's address bar. Without DNS, navigating the internet wouldn't be easy since we'd have to enter the IP address of each website we want to visit. 
+<h2>Let's briefly describe what DNS (Domain Name System) is and it's primary use</h2> The Domain Name System (DNS) maps human-readable domain names (in URLs or in email address) to IP addresses. For example, DNS translates and maps the domain www.google.com to the IP address 142.251.40.238. This takes place behind the scenes after you type a URL into a web browser's address bar. Without DNS, navigating the internet wouldn't be easy since we'd have to enter the IP address of each website we want to visit. In a sense it acts like the phone book of the internet.
 <p>  
 <br>  
 <br>
@@ -48,7 +48,7 @@ For the demonstration below I will use Active Directory that was installed in a 
 **Test Pinging a Hostname and Check Local Cache**
 <p>
   
-Let's begin with logging in to our Domain Controller and Client VM's as the Administrator using Microsoft Remote Desktop. ** **Note** ** The Client is using the Domain as it's **DNS server**. This means that it is relying on the Domain for all of it's Hostname to IP Address translations. Now on the Client VM, lets open the Command Prompt and type "ping mainframe". You will get a message saying it cannot find the hostname "mainframe". Let's right click on the start menu and and select the run command. Type the following "c:\windows\system\32\drivers\etc\hosts" to open the local host cache (use Notepad to open the file when it prompts you). If we check the local cache for hostnames that are stored on this computer we will not find it there either. It cannot be found by the Client because the A record for the hostname "mainframe" does not exist yet on the DNS server which is located on the Domain Controller as we configured it.
+Let's begin with logging in to our Domain Controller and Client VM's as the Administrator using Microsoft Remote Desktop. ** **Note** ** The Client is using the Domain as it's **DNS server**. This means that it is relying on the Domain for all of it's Hostname to IP Address translations. Now on the Client VM, lets open the Command Prompt and type "ping mainframe". You will get a message saying it cannot find the hostname "mainframe". The Client will first check it's local cache to see if it already knows this hostname. If it fails to locate it there, next it will check it's local host file. Let's right click on the start menu and and select the run command. Type the following "c:\windows\system\32\drivers\etc\hosts" to open the local host file (use Notepad to open the file when it prompts you). After checking the local host file for hostnames that are stored on this computer we will not find it there either. Lastly the Client will check it's DNS server. It cannot be found by the Client because the A record for the hostname "mainframe" does not exist yet on the DNS server which is located on the Domain Controller as we configured it.
 <p>
 <p> 
 <p>
