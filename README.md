@@ -36,7 +36,7 @@
 <br>
 <h2>Important Note</h2>
   
-For the demonstration below I will use Active Directory that was installed in a Microsoft Azure Virtual Machine running Windows 2022 Sever and it's Client running Windows 10 on another VM. After joining the Client to the Domain Controller I will login as the Administrator on both VM's to continue with the lab. For a full walkthrough on how to install and configure Active Directory and Azure VM's please view my previous tutorials by clicking on these links:
+For the demonstration below I will use Active Directory that was installed in a Microsoft Azure Virtual Machine running Windows 2022 Sever and it's Client running Windows 10 on another VM. On the Client VM's Network Interface Card (NIC) we configured the DNS settings to use the Domain VM's private IP address as it's DNS server. After joining the Client to the Domain Controller I will login as the Administrator on both VM's to continue with the lab. For a full walkthrough on how to install and configure Active Directory and Azure VM's please view my previous tutorials by clicking on these links:
 <p> https://github.com/JosephRullo/Configuring-Active-Directory-within-Azure-VMs/blob/main/README.md</p>
 <p> https://github.com/JosephRullo/Azure-Virtual-Machines-and-Networking/blob/main/README.md</p>
 <p>
@@ -61,5 +61,7 @@ Let's begin with logging in to our Domain Controller and Client VM's as the Admi
 
 **Create A record on the DNS server**
 <p>
+
+
 
 <br>
