@@ -23,7 +23,7 @@
 <p>
 <p>
 <br> 
-<h2>Let's briefly describe how Virtual Private Networks work</h2> A VPN is a tool that allows you to access the internet securely wherever you are. It works by creating a secure “tunnel” between your device and your VPN provider, and it protects you in two key ways. 
+<h2>Let's briefly describe what DNS (Domain Name System) is and it's primary use</h2> The Domain Name System (DNS) maps human-readable domain names (in URLs or in email address) to IP addresses. For example, DNS translates and maps the domain www.google.com to the IP address 142.251.40.238. This takes place behind the scenes after you type a URL into a web browser's address bar. Without DNS, navigating the internet wouldn't be easy since we'd have to enter the IP address of each website we want to visit. 
 <p>  
 <p>  1. Concealing your IP address, protecting your identity and location 
 <p>  2. Encrypting your traffic between you and your VPN provider so that no one on your local network can decipher or modify it.
@@ -61,61 +61,3 @@ Log into the VM via Remote Desktop. Once Window's is done booting, open the web 
 <img src="https://i.imgur.com/X19xJQN.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <p>
 <br>
-<h2>Step 3.</h2>
-
-**Download and Install a VPN Client**
-<p>
-Select a VPN client that you would like to download and install, there are many options to choose from. For this example I will be using Proton VPN, which has a free version available here https://protonvpn.com. Once downloaded open the app, create an account and sign in. 
-<p>
-<p>
-<img src="https://i.imgur.com/IPUb2fV.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<p>
-<br>
-<h2>Step 4.</h2>
-
-**Select a VPN Connection**
-<p>
-Once signed in, you will be brought to a screen showing your current IP Address and status. This is where you can choose where you would like to establish the VPN server. For this example I will choose the Netherlands. Select the country and click connect. Once the connection is established, observe the changes on the VPN status screen.
-<p>
-<p>
-<img src="https://i.imgur.com/yPCYU0t.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/RwZW2gk.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/3HGzqQH.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<p>
-<br>
-<h2>Step 5.</h2>
-
-**Verify VPN is Working**
-<p>
-Now that we've established a VPN connection, let's go back to the web browser and check our IP Address once more. Notice now that it is now showing the new location we connected to. We are now browsing from this new location as if we were physically located there. Try www.google.com again and you will now see it is displayed in Dutch, the native language of the Netherlands.
-<p>
-<p>
-<img src="https://i.imgur.com/1t61U8o.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/PtTM2Hb.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<p>
-<br>
-<h2>Step 6.</h2>
-
-**Switch VPN Servers**
-<p>
-Let's try switching VPN servers to demonstrate changing locations once more. Go back to the VPN client and dissconnect it. Choose another region, in this case the U.S. and click connect.
-<p>
-<p>
-<img src="https://i.imgur.com/Pztfnzb.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/Yrh9BzT.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/JdCAroM.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<p>
-<br>
-<h2>Step 7.</h2>
-
-**Check Web IP again**
-<p>
-Once again go back to the web and check both websites to verify the change.
-<p>
-<p>
-<img src="https://i.imgur.com/MIRGgKp.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/IiAM3C0.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<p>
-<br>
-You can switch servers again if you like and try to view another regions local content that is not available where you're located, for example a movie streaming service. You can also purchase the full version of Proton VPN and gain many more optoins as well as locations all over the world to connect from. 
-<h2> <p align="center"> This concludes the Virtual Private Network demonstration, thanks for viewing.</h2># Domain-Name-System-DNS-
