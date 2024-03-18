@@ -33,7 +33,9 @@
 <p>  
 <br>  
 <br>
-For the demonstration below I will create a Virtual Machine in Microsoft Azure and assign it a region in another country. Then I will demonstrate how a VPN can be used to change it's IP Address and location to view another regions local content as if it were physically located there. We'll switch locations once more and observe the changes. The diagram below will illustrate this.
+For the demonstration below I will use Active Directory that was installed in Microsoft Azure Virtual Machines. After joining the Domain Controller to the Client I will login as the Administrator on both VM's to continue with the lab. For a full walkthrough on how to install and configure Active Directory and Azure VM's please view my previous tutorials by clicking on these links:
+<p> https://github.com/JosephRullo/Configuring-Active-Directory-within-Azure-VMs/blob/main/README.md</p>
+<p> https://github.com/JosephRullo/Azure-Virtual-Machines-and-Networking/blob/main/README.md</p>
 <p>
 <p>
 <img src="https://i.imgur.com/iDp8ihx.png" alt="Microsoft Active Directory Logo"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
