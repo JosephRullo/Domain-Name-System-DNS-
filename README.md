@@ -102,7 +102,7 @@ Sometimes on a network resource the IP address of a hostname can change. Let's s
 
 **Flush DNS**
 <p>
-If the IP address of a hostname has been changed but the Client still has the original IP on it's local cache, this can cause issues with connecting to the resources you're looking for. This is where the command prompt "ipconfig /flushdns" comes in. This command will wipe the computer's local cache so that the next time any hostname is searched it will resolve back to the primary DNS server's records and obtain the most current configuration. This is useful in troubleshooting some internet connection issues, and in our example it will resolve the correct IP address for the hostname mainframe. **Note** you will have to open the command prompt as the Administrator, to do this right click on Command Prompt and select "Run as administrator". Let's try it type in "ipconfig /flushdns" and you will get the message that the DNS resolver cache has been successfully flushed. Now when we enter the command "ipconfig /displaydns" we can see that there is nothing on the local cache anymore. Let's now "ping mianframe" one last time and observe the change. Now the correct IP address has been resolved.
+If the IP address of a hostname has been changed but the Client still has the original IP on it's local cache, this can cause issues with connecting to the resources you're looking for. This is where the command prompt "ipconfig /flushdns" comes in. This command will wipe the computer's local cache so that the next time any hostname is searched it will resolve back to the primary DNS server's records and obtain the most current configuration. This is useful in troubleshooting some internet connection issues, and in our example it will resolve the correct IP address for the hostname mainframe. **Note** you will have to open the command prompt as the Administrator, to do this right click on Command Prompt and select "Run as administrator". Let's try it type in "ipconfig /flushdns" and you will get the message that the DNS resolver cache has been successfully flushed. Now when we enter the command "ipconfig /displaydns" we can see that there is nothing on the local cache anymore. Let's now "ping mianframe" one last time and observe the change. Now the correct IP address has been resolved. If we type in "ipconfig /displaydns" now, we will see the Client now has the current IP address locally cached after resolving to the primary DNS server.
 <p>
 <p>
 <p>
@@ -110,5 +110,6 @@ If the IP address of a hostname has been changed but the Client still has the or
 <img src="https://i.imgur.com/3yZQVHm.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> https://i.imgur.com/JoOM2KI.png
 <img src="https://i.imgur.com/ZYsmPKI.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/JoOM2KI.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/YkNnVnx.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <p>
 <br>
