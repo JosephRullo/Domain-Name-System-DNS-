@@ -23,11 +23,11 @@
 <p>
   <h2>High-Level Configuration Steps</h2>
 
-- Inspect DNS A records on the server (Hostname to IP Address Mappings)
-- Create our own A records on the server and observe them on the client
-- Delete records from the server and inspect/clear the client dns cache
+- Inspect DNS "A" records on the server (Hostname to IP Address Mappings)
+- Create our own "A"records on the server and observe them on the client
+- Delete records from the server and inspect/clear the client DNS cache
 - Create a "CNAME" record (mapping one hostname to another hostname)
-- Discuss what Root Hints are and how they work
+- Discuss what "Root Hints" are and how they work
 <p>
 <br> 
 <h2>Let's briefly describe what DNS (Domain Name System) is and it's primary use</h2> The Domain Name System (DNS) maps human-readable domain names (in URLs or in email address) to IP addresses. For example, DNS translates and maps the domain www.google.com to the IP address 142.251.40.238. This takes place behind the scenes after you type a URL into a web browser's address bar. Without DNS, navigating the internet wouldn't be easy since we'd have to enter the IP address of each website we want to visit. In a sense it acts like the phone book of the internet.
