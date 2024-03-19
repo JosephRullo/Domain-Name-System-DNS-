@@ -25,7 +25,7 @@
 
 - Inspect DNS "A" records on the server (Hostname to IP Address Mappings)
 - Create our own "A"records on the server and observe them on the client
-- Delete records from the server and inspect/clear the client DNS cache
+- Delete records from the server and inspect/flush the client DNS cache
 - Create a "CNAME" record (mapping one hostname to another hostname)
 - Discuss what "Root Hints" are and how they work
 <p>
