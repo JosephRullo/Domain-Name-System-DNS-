@@ -67,6 +67,8 @@ In order for the Client to be able to find the arbitrary hostname "mainframe" th
 <p>
 <img src="https://i.imgur.com/hPFmm4q.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://i.imgur.com/RDjrRNb.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/LHMzp0R.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/LHMzp0R.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/siBUSV2.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/1M74hrt.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <p>
 <br>
