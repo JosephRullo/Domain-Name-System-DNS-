@@ -122,8 +122,21 @@ A "canonical name" (CNAME) record points from an alias domain to a "canonical" d
 <p>
 <p>
 <img src="https://i.imgur.com/XUkJDlU.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/CQoJNZ9.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> https://i.imgur.com/JoOM2KI.png
+<img src="https://i.imgur.com/CQoJNZ9.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://i.imgur.com/QDFYOXK.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/h7vsZSy.jpeg"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<p>
+<br>
+<h2>Step 7.</h2>
+
+**Root Hints**
+<p>
+Root hints are DNS data stored in a DNS server. The root hints provide a list of preliminary resource records that can be used by the DNS service to locate other DNS servers that are authoritative for the root of the DNS domain namespace tree. Root hints are used to prepare servers authoritative for non-root zones so that they can learn and discover authoritative servers that manage domains located at a higher level or in other subtrees of the DNS domain namespace. To put it simply, our primary DNS server only has three A records stored on it. This will not be useful to anyone on the client side that needs to access any hostname, say a website like "www.staples.com" to order some supplies they may need for their office. Our DNS server does not know what that hostname is. However, thanks to "Root Hints", it can resolve queries that do not exist on the local DNS server. We can observe this by going to the DNS manager in the Directory and right clicking on the Domain -> selecting Properties -> click the "Root Hints" tab. So when if we go back to our Client, and open up a web browser and enter in the hostname "www.staples.com" we see that we can indeed find the IP address and connect to the site. How convient that is!
+<p>
+<p>
+<p>
+<img src="https://i.imgur.com/NJ0MZrz.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/69lA7VR.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/rdq8pTj.jpeg"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <p>
 <br>
