@@ -72,3 +72,18 @@ In order for the Client to be able to find the arbitrary hostname "mainframe" th
 <img src="https://i.imgur.com/1M74hrt.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <p>
 <br>
+<h2>Step 3.</h2>
+
+**Create an "A Record" on the DNS server**
+<p>
+In order for the Client to be able to find the arbitrary hostname "mainframe" that we searched for, we have to create an "A Record" in the DNS Manager on the Domain Controller since it is acting as the Client's DNS server. Switch over to the Domain Controller VM and open Server Manager -> Go to "Tools" -> Select "DNS" from the drop down menu. Now select the Domain Controller -> Click on "Forward Lookup Zones" (this is where the hostname to IP address mappings are located)-> Select the Domain Name. You will now see a list of the current "A" records that are on the server that were automatically registered when we set up Active Directory on the Domain Controller VM and joined the Client VM to it. Righ Click in this field and select "New Hostname (A or AAAA) -> Enter in the "Name" feild "mainframe" -> Enter in the IP Address field "10.0.0.4" (Note this is the Domain VM's private IP address. We are entering this just so we can ping it successfully. It can be a different IP address as we'll demonstrate soon) -> click "Add Host" -> click OK and Done. Now we can see we have a new "A" record for "mainframe" mapped to IP Address 10.0.0.4.
+<p>
+<p>
+<p>
+<img src="https://i.imgur.com/hPFmm4q.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/RDjrRNb.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/LHMzp0R.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/siBUSV2.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/1M74hrt.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<p>
+<br>
