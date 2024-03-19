@@ -48,7 +48,7 @@ For the demonstration below I will use Active Directory that was installed in a 
 **Test Pinging a Hostname and Check Local Cache**
 <p>
   
-Let's begin with logging in to our Domain Controller and Client VM's as the Administrator using Microsoft Remote Desktop. ** **Note** ** The Client is using the Domain as it's **DNS server**. This means that it is relying on the Domain for all of it's Hostname to IP Address translations. Now on the Client VM, lets open the Command Prompt and type "ping mainframe". You will get a message saying it cannot find the hostname "mainframe". The Client will first check it's local cache to see if it already knows this hostname. If it fails to locate it there, next it will check it's local host file. Let's right click on the start menu and and select the run command. Type the following "c:\windows\system\32\drivers\etc\hosts" to open the local host file (use Notepad to open the file when it prompts you). After checking the local host file for hostnames that are stored on this computer we will not find it there either. Lastly the Client will check it's DNS server. It cannot be found by the Client because the A record for the hostname "mainframe" does not exist yet on the DNS server which is located on the Domain Controller as we configured it.
+Let's begin with logging in to our Domain Controller and Client VM's as the Administrator using Microsoft Remote Desktop. ** **Note** ** The Client is using the Domain as it's **DNS server**. This means that it is relying on the Domain for all of it's Hostname to IP Address translations. Now on the Client VM, lets open the Command Prompt and type "ping mainframe" (this is an arbitrary hostname that we will use for this demo, it could be any random word you like). You will get a message saying it cannot find the hostname "mainframe". The Client will first check it's local cache to see if it already knows this hostname. If it fails to locate it there, next it will check it's local host file. Let's right click on the start menu and and select the run command. Type the following "c:\windows\system\32\drivers\etc\hosts" to open the local host file (use Notepad to open the file when it prompts you). After checking the local host file for hostnames that are stored on this computer we will not find it there either. Lastly the Client will check it's DNS server. It cannot be found by the Client because the A record for the hostname "mainframe" does not exist yet on the DNS server which is located on the Domain Controller as we configured it.
 <p>
 <p> 
 <p>
@@ -59,9 +59,9 @@ Let's begin with logging in to our Domain Controller and Client VM's as the Admi
 <br>
 <h2>Step 2.</h2>
 
-**Create A record on the DNS server**
+**Create an "A Record" on the DNS server**
 <p>
-
+In order for the Client to be able to find the arbitrary hostname "mainframe" that we searched for, we have to create an "A Record" in the DNS Manager on the Domain Controller since it is acting as the Client's DNS server. Switch over to the Domain Controller VM and open Server Manager -> Go to "Tools" -> Select "DNS" from the drop down menu. Now select the Domain Controller -> Click on "Forward Lookup Zones" (this is where the hostname to IP address mappings are located)-> Select the Domain Name. You will now see a list of the current "A" records that are on the server that were automatically registered when we set up Active Directory on the Domain Controller VM and joined the Client VM to it.
 
 
 <br>
