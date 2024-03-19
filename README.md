@@ -140,3 +140,4 @@ Root hints are DNS data stored in a DNS server. The root hints provide a list of
 <img src="https://i.imgur.com/rdq8pTj.jpeg"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <p>
 <br>
+<h2> <p align="center"> This concludes the Domain Name System demonstration, thanks for viewing.</h2>
