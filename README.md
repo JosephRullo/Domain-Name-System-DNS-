@@ -113,3 +113,18 @@ If the IP address of a hostname has been changed but the Client still has the or
 <img src="https://i.imgur.com/YkNnVnx.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <p>
 <br>
+<h2>Step 6.</h2>
+
+**"C" Name Records**
+<p>
+A "canonical name" (CNAME) record points from an alias domain to a "canonical" domain. A CNAME record is used in lieu of an A record, when a domain or subdomain is an alias of another domain. All CNAME records must point to a domain, never to an IP address. Let's create one back on the Domain Controller. Go back to the DNS manager and right click in the domain name field and select "New Alias (CName)" -> enter in a word of choice in this case "search" in the alias field -> enter in the "fully qualified domain name" field a hostname of your choice, in this case "www.google.com" -> click OK.
+<p>
+<p>
+<p>
+<img src="https://i.imgur.com/sBPwtlF.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/3yZQVHm.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> https://i.imgur.com/JoOM2KI.png
+<img src="https://i.imgur.com/ZYsmPKI.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/JoOM2KI.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/YkNnVnx.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<p>
+<br>
