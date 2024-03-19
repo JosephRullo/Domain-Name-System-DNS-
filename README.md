@@ -85,3 +85,16 @@ With the "A" record now created for the hostname, let's switch back to the Clien
 <img src="https://i.imgur.com/VF5KLuK.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <p>
 <br>
+<h2>Step 4.</h2>
+
+**Change IP Address of "A" Record and Observe Changes**
+<p>
+Sometimes on a network resource the IP address of a hostname can change. Let's simulate this by changing the "A" record on the primary DNS server and see what happens when we try to ping it once more on the Client. Go to the Domain VM -> back to the DNS Manager and click on the "A" record for "mainframe" -> change the IP address to 8.8.8.8 (any random IP will do). Now switch back to the Client and "ping mainframe" once again. You'll notice that instead of it pinging the new IP address we entered, it is displaying the original one that was entered previously. This is because the client has first checked it's local cache where this hostname has already been stored. Therefore it will use this previous record to resolve the hostname search.
+<p>
+<p>
+<p>
+<img src="https://i.imgur.com/wHOWpPS.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/KREzSX4.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/vPELsUK.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<p>
+<br>
