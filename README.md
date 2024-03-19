@@ -115,9 +115,9 @@ If the IP address of a hostname has been changed but the Client still has the or
 <br>
 <h2>Step 6.</h2>
 
-**CName Records**
+**CNAME Records**
 <p>
-A "canonical name" (CNAME) record points from an alias domain to a "canonical" domain. A CNAME record is used in lieu of an A record, when a domain or subdomain is an alias of another domain. All CNAME records must point to a domain, never to an IP address. Let's create one back on the Domain Controller. Go back to the DNS manager and right click in the domain name field and select "New Alias (CName)" -> enter in a word of choice in this case "search" in the alias field -> enter in the "fully qualified domain name" field a hostname of your choice, in this case "www.google.com" -> click OK. We have now mapped the hostname "www.google.com" to the alias "search". Let's now switch back to the Client and see what happens when we "ping search". You will notice that before we created the Cname record, it would fail the ping since there was no search host in the server. However on the second attempt (after creating the Cname record on the server) we see that "search" now resolves to "www.google.com".
+A "canonical name" (CNAME) record points from an alias domain to a "canonical" domain. A CNAME record is used in lieu of an A record, when a domain or subdomain is an alias of another domain. All CNAME records must point to a domain, never to an IP address. Let's create one back on the Domain Controller. Go back to the DNS manager and right click in the domain name field and select "New Alias (CNAME)" -> enter in a word of choice in this case "search" in the alias field -> enter in the "fully qualified domain name" field a hostname of your choice, in this case "www.google.com" -> click OK. We have now mapped the hostname "www.google.com" to the alias "search". Let's now switch back to the Client and see what happens when we "ping search". You will notice that before we created the CNAME record, it would fail the ping since there was no search host in the server. However on the second attempt (after creating the CNAME record on the server) we see that "search" now resolves to "www.google.com".
 <p>
 <p>
 <p>
