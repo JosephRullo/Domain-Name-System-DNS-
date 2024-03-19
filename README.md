@@ -74,16 +74,14 @@ In order for the Client to be able to find the arbitrary hostname "mainframe" th
 <br>
 <h2>Step 3.</h2>
 
-**Create an "A Record" on the DNS server**
+**Ping Hostname on Client (Second Time)**
 <p>
-In order for the Client to be able to find the arbitrary hostname "mainframe" that we searched for, we have to create an "A Record" in the DNS Manager on the Domain Controller since it is acting as the Client's DNS server. Switch over to the Domain Controller VM and open Server Manager -> Go to "Tools" -> Select "DNS" from the drop down menu. Now select the Domain Controller -> Click on "Forward Lookup Zones" (this is where the hostname to IP address mappings are located)-> Select the Domain Name. You will now see a list of the current "A" records that are on the server that were automatically registered when we set up Active Directory on the Domain Controller VM and joined the Client VM to it. Righ Click in this field and select "New Hostname (A or AAAA) -> Enter in the "Name" feild "mainframe" -> Enter in the IP Address field "10.0.0.4" (Note this is the Domain VM's private IP address. We are entering this just so we can ping it successfully. It can be a different IP address as we'll demonstrate soon) -> click "Add Host" -> click OK and Done. Now we can see we have a new "A" record for "mainframe" mapped to IP Address 10.0.0.4.
+With the "A" record now created for the hostname, let's switch back to the Client and oberve what happens. Go back to the Command Prompt on the Client VM and type "ping mainframe". You will see that we can successfully find the hostname with the IP address we assigned to it. We can type in the command "nslookup mainframe" The name server lookup (nslookup) command-line tool finds the internet protocol (IP) address or domain name system (DNS) record for a specific hostname. Let us now check the Client's local DNS cache by typing "ipconfig /displaydns". You will see that both mainframe and the Domain hostnames are now cached locally on the Client since they have now been resolved once successfully. This will allow the Client to more readily locate these hostnames when they are requested agian, by quickly checking it's own local cache where they are now stored.
 <p>
 <p>
 <p>
-<img src="https://i.imgur.com/hPFmm4q.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/RDjrRNb.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/LHMzp0R.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/siBUSV2.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/1M74hrt.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/a84ZbjY.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/b6P1nRc.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/VF5KLuK.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <p>
 <br>
