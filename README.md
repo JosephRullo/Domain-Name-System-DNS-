@@ -107,7 +107,7 @@ If the IP address of a hostname has been changed but the Client still has the or
 <p>
 <p>
 <img src="https://i.imgur.com/sBPwtlF.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/3yZQVHm.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> https://i.imgur.com/JoOM2KI.png
+<img src="https://i.imgur.com/3yZQVHm.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://i.imgur.com/ZYsmPKI.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/JoOM2KI.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/YkNnVnx.png"/> <height="60%" width="60%" alt="Disk Sanitization Steps"/>
